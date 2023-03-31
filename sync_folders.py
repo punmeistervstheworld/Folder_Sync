@@ -1,6 +1,6 @@
 import os
 import shutil
-import hashlib
+import hashlib # it will be used for MD5 checks
 import time
 
 
