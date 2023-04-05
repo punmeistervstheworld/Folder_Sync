@@ -14,7 +14,7 @@ python sync_folders.py source_path replica_path log_path interval
 For example: python sync_folders.py C:\Users\thema\Desktop\Source C:\Users\thema\Desktop\Replica C:\Users\thema\Desktop\logfile.log 60
 
 Libraries used: 
-1. os (for navigating the OS);
+1. os (for interacting with the operating system, in this case Windows 11);
 2. shutil (for high-level file operations, such as copying and deleting);
 3. time (for logging/console timestamps)
 4. argparse (necessary for providing the command line arguments for the folders path, log file path and time interval)
