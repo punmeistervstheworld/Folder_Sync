@@ -7,7 +7,7 @@ import logging
 time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
 
-def synchronize_folders(source_path, replica_path, log_path, interval):
+def sync_folders(source_path, replica_path, log_path, interval):
     logging.basicConfig(filename=log_path, level=logging.INFO)
 
     while True:
@@ -78,4 +78,4 @@ if __name__ == "__main__":
     parser.add_argument("interval", type=int, help="synchronization interval in seconds")
     args = parser.parse_args()
 
-    synchronize_folders(args.source_path, args.replica_path, args.log_path, args.interval)
+    sync_folders(args.source_path, args.replica_path, args.log_path, args.interval)
