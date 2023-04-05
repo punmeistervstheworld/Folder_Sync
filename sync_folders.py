@@ -4,13 +4,14 @@ import time
 import argparse
 import logging
 
-time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+
 
 
 def sync_folders(source_path, replica_path, log_path, interval):
     logging.basicConfig(filename=log_path, level=logging.INFO)
 
     while True:
+        time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         print("Synchronization started at " + time_now)
         logging.info("Synchronization started at %s", time_now)
 
